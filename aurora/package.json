@@ -1,6 +1,9 @@
 {
   "name": "aurora",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.14.1"
+  },
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -11,7 +14,10 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": "https://github.com/hamayonhussain/aurora-heroku.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamayonhussain/aurora-heroku.git"
+  },
   "author": "hamayon",
   "license": "MIT",
   "dependencies": {
@@ -19,5 +25,10 @@
     "express": "^4.16.4",
     "if-env": "^1.0.4",
     "nodemon": "^1.18.9"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hamayonhussain/aurora-heroku/issues"
+  },
+  "homepage": "https://github.com/hamayonhussain/aurora-heroku#readme",
+  "description": ""
 }
